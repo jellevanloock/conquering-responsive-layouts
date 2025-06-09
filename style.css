@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.container {
+    margin: 0 auto;
+    inline-size: 90%;
+    max-inline-size: 1200px;
+}
+
+.intro-content {
+    inline-size: 60%;
+}
+
+.intro {
+    background-color: #23424a;
+    color: #fff;
+    padding: 4em 0 5em;
+    font-weight: 300;
+}
+
+.intro button {
+    text-transform: uppercase;
+    background-color: #38cfd9;
+    color: #072a2d;
+    border: 0;
+    padding: 1em 2em;
+    font-weight: 700;
+    font-size: 1.35rem;
+    border-radius: 4rem;
+    margin-block-start: 2em;
+}
