@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Roboto;
-    font-size: 1.3125rem;
     margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 1.3125rem;
 }
 
 h1 {
@@ -16,30 +18,38 @@ h1 {
 }
 
 .container {
+    inline-size: 80%;
+    max-inline-size: 900px;
     margin: 0 auto;
-    inline-size: 90%;
-    max-inline-size: 1200px;
 }
 
-.intro-content {
-    inline-size: 60%;
-}
-
-.intro {
+.hero {
     background-color: #23424a;
     color: #fff;
     padding: 4em 0 5em;
     font-weight: 300;
 }
 
-.intro button {
+.hero__text {
+    inline-size: 60%;
+}
+
+.hero p {
+    margin-block-end: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
     text-transform: uppercase;
-    background-color: #38cfd9;
     color: #072a2d;
-    border: 0;
-    padding: 1em 2em;
-    font-weight: 700;
-    font-size: 1.35rem;
+    font-weight: 900;
+    background-color: #38cfd9;
+    padding: 0.75em 2em;
     border-radius: 4rem;
-    margin-block-start: 2em;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    opacity: 0.75;
 }
