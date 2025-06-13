@@ -44,22 +44,17 @@ h1 {
 .row {
     /* display: flex => flex container */
     display: flex;
-    text-align: center;
-    gap: 0.5em;
+    gap: 2em;
     padding: 50px 0;
 
     /* can't use yet */
     /* gap: 100px; */
 }
 
-.row--one h2 {
-    color: #87629a;
-}
-
-.wrapper {
-    background-color: #136c72;
-    color: #fff;
-}
+/* Old school gap */
+/* .col + .col {
+    margin-inline-start: 2em;
+} */
 
 .col {
     /* these are now flex items */
@@ -78,6 +73,23 @@ h1 {
 
 .hero p {
     margin-inline-end: 3em;
+}
+
+.three-col {
+    text-align: center;
+    padding: 3em 0;
+}
+
+/* this could also be a class: three-col__title */
+.three-col h2 {
+    color: #87629a;
+}
+
+.two-col {
+    text-align: center;
+    padding: 3em 0;
+    background-color: #136c72;
+    color: #fff;
 }
 
 .btn {
