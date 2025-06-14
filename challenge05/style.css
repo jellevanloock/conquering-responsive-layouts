@@ -1,0 +1,116 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-block-start: 0;
+}
+
+.container {
+    inline-size: 80%;
+    max-inline-size: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    /* display: flex => flex container */
+    display: flex;
+    justify-content: space-between;
+
+    /* can't use yet */
+    /* gap: 100px; */
+}
+
+.col {
+    /* these are now flex items */
+    inline-size: 100%;
+}
+
+.col + .col {
+    margin-inline-start: 30px;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424a;
+    color: #fff;
+}
+
+.hero__text {
+    inline-size: 62%;
+}
+
+.hero__img {
+    inline-size: 32%;
+    align-self: flex-start;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23424a;
+    font-weight: 900;
+    background-color: #38cfd9;
+    padding: 0.75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.75;
+}
+
+.accent-text {
+    color: #136c72;
+}
+
+.two-col {
+    margin-block: 2em;
+}
+
+.two-col__main {
+    inline-size: 60%;
+}
+
+.two-col__side {
+    inline-size: 35%;
+    background-color: #136c72;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5em 1em;
+    align-self: flex-start;
+}
